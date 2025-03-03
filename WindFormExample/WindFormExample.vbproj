@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BAA96B46-A245-4C1E-A08B-CFA9048CCAC7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindFormExample.My.MyApplication</StartupObject>
+    <StartupObject>WindFormExample.WindFormExampleForm</StartupObject>
     <RootNamespace>WindFormExample</RootNamespace>
     <AssemblyName>WindFormExample</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -81,10 +81,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -103,11 +99,13 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="WindFormExampleForm.resx">
+      <DependentUpon>WindFormExampleForm.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
