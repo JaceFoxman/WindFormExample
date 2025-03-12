@@ -36,6 +36,11 @@ Partial Class WindFormExampleForm
         Me.LastFirstRadioButton = New System.Windows.Forms.RadioButton()
         Me.CaseGroupBox = New System.Windows.Forms.GroupBox()
         Me.FormatGroupBox = New System.Windows.Forms.GroupBox()
+        Me.ReverseCheckBox = New System.Windows.Forms.CheckBox()
+        Me.WhiteSpaceCheckBox = New System.Windows.Forms.CheckBox()
+        Me.RandomCheckBox = New System.Windows.Forms.CheckBox()
+        Me.DataListBox = New System.Windows.Forms.ListBox()
+        Me.RemoveButton = New System.Windows.Forms.Button()
         Me.CaseGroupBox.SuspendLayout()
         Me.FormatGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -156,7 +161,7 @@ Partial Class WindFormExampleForm
         '
         Me.CaseGroupBox.Controls.Add(Me.LowerRadioButton)
         Me.CaseGroupBox.Controls.Add(Me.UpperRadioButton)
-        Me.CaseGroupBox.Location = New System.Drawing.Point(104, 117)
+        Me.CaseGroupBox.Location = New System.Drawing.Point(33, 136)
         Me.CaseGroupBox.Name = "CaseGroupBox"
         Me.CaseGroupBox.Size = New System.Drawing.Size(128, 87)
         Me.CaseGroupBox.TabIndex = 12
@@ -167,18 +172,71 @@ Partial Class WindFormExampleForm
         '
         Me.FormatGroupBox.Controls.Add(Me.LastFirstRadioButton)
         Me.FormatGroupBox.Controls.Add(Me.FirstLastRadioButton)
-        Me.FormatGroupBox.Location = New System.Drawing.Point(104, 210)
+        Me.FormatGroupBox.Location = New System.Drawing.Point(167, 142)
         Me.FormatGroupBox.Name = "FormatGroupBox"
         Me.FormatGroupBox.Size = New System.Drawing.Size(128, 81)
         Me.FormatGroupBox.TabIndex = 14
         Me.FormatGroupBox.TabStop = False
         Me.FormatGroupBox.Text = "Format"
         '
+        'ReverseCheckBox
+        '
+        Me.ReverseCheckBox.AutoSize = True
+        Me.ReverseCheckBox.Location = New System.Drawing.Point(33, 229)
+        Me.ReverseCheckBox.Name = "ReverseCheckBox"
+        Me.ReverseCheckBox.Size = New System.Drawing.Size(94, 24)
+        Me.ReverseCheckBox.TabIndex = 15
+        Me.ReverseCheckBox.Text = "Reverse"
+        Me.ReverseCheckBox.UseVisualStyleBackColor = True
+        '
+        'WhiteSpaceCheckBox
+        '
+        Me.WhiteSpaceCheckBox.AutoSize = True
+        Me.WhiteSpaceCheckBox.Location = New System.Drawing.Point(33, 259)
+        Me.WhiteSpaceCheckBox.Name = "WhiteSpaceCheckBox"
+        Me.WhiteSpaceCheckBox.Size = New System.Drawing.Size(126, 24)
+        Me.WhiteSpaceCheckBox.TabIndex = 16
+        Me.WhiteSpaceCheckBox.Text = "White Space"
+        Me.WhiteSpaceCheckBox.UseVisualStyleBackColor = True
+        '
+        'RandomCheckBox
+        '
+        Me.RandomCheckBox.AutoSize = True
+        Me.RandomCheckBox.Location = New System.Drawing.Point(33, 289)
+        Me.RandomCheckBox.Name = "RandomCheckBox"
+        Me.RandomCheckBox.Size = New System.Drawing.Size(96, 24)
+        Me.RandomCheckBox.TabIndex = 17
+        Me.RandomCheckBox.Text = "Random"
+        Me.RandomCheckBox.UseVisualStyleBackColor = True
+        '
+        'DataListBox
+        '
+        Me.DataListBox.FormattingEnabled = True
+        Me.DataListBox.ItemHeight = 20
+        Me.DataListBox.Location = New System.Drawing.Point(324, 12)
+        Me.DataListBox.Name = "DataListBox"
+        Me.DataListBox.Size = New System.Drawing.Size(464, 284)
+        Me.DataListBox.TabIndex = 18
+        '
+        'RemoveButton
+        '
+        Me.RemoveButton.Location = New System.Drawing.Point(292, 332)
+        Me.RemoveButton.Name = "RemoveButton"
+        Me.RemoveButton.Size = New System.Drawing.Size(216, 97)
+        Me.RemoveButton.TabIndex = 19
+        Me.RemoveButton.Text = "Remove"
+        Me.RemoveButton.UseVisualStyleBackColor = True
+        '
         'WindFormExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.RemoveButton)
+        Me.Controls.Add(Me.DataListBox)
+        Me.Controls.Add(Me.RandomCheckBox)
+        Me.Controls.Add(Me.WhiteSpaceCheckBox)
+        Me.Controls.Add(Me.ReverseCheckBox)
         Me.Controls.Add(Me.FormatGroupBox)
         Me.Controls.Add(Me.CaseGroupBox)
         Me.Controls.Add(Me.AgeTextBox)
@@ -214,4 +272,9 @@ Partial Class WindFormExampleForm
     Friend WithEvents LastFirstRadioButton As RadioButton
     Friend WithEvents CaseGroupBox As GroupBox
     Friend WithEvents FormatGroupBox As GroupBox
+    Friend WithEvents ReverseCheckBox As CheckBox
+    Friend WithEvents WhiteSpaceCheckBox As CheckBox
+    Friend WithEvents RandomCheckBox As CheckBox
+    Friend WithEvents DataListBox As ListBox
+    Friend WithEvents RemoveButton As Button
 End Class
